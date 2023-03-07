@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-    <h2 class="text-center">Laravel JSON Columns Create</h2>
+    <h2 class="text-center mt-5">Laravel JSON Columns Create</h2>
      <form action="{{ route("products.store") }}" method="POST">
     @csrf
     <div class="form-group mt-5">
@@ -41,8 +41,9 @@
         </div>
         @endfor
     </div>
-    <div>
-        <input class="btn btn-danger mt-2" type="submit" />
+    <div class="d-flex justify-content-between mt-2">
+        <a href="{{ route('products.index') }}"><button type="button" class="btn btn-primary">Back</button></a>
+        <input class="btn btn-danger mt-2" type="submit" value="Create" />
     </div>
 </form>
     </div>

@@ -10,7 +10,7 @@
 <body>
     
     <div class="container mt-5">
-        <h2 class="text-center mb-5">Laravel JSON Columns Delete</h2>
+        <h2 class="text-center mb-5">Laravel JSON Columns</h2>
         <a href="{{ route('products.create') }}"><button type="button" class="btn btn-primary float-end">Create</button></a>
         <table class="table">
             <thead>
@@ -35,7 +35,7 @@
                     </td>
                     <td>
                         <a href="{{ route('products.edit',$product->id) }}"><button type="button" class="btn btn-primary">Edit</button></a>
-                        <form action="{{ route('products.destroy',$product->id) }}" method="POST">
+                        <form action="{{ route('products.destroy',$product->id) }}" method="POST" class="d-inline">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>

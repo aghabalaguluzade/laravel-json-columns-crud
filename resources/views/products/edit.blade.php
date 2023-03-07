@@ -44,7 +44,10 @@
                 </div>
             @endfor
         </div>
-        <input class="btn btn-danger mt-2" type="submit">
+        <div class="d-flex justify-content-between mt-2">
+            <a href="{{ route('products.index') }}"><button type="button" class="btn btn-primary">Back</button></a>
+            <input class="btn btn-danger mt-2" type="submit" value="Update" />
+        </div>
     </form>
 </div>
 
